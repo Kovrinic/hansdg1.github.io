@@ -1,16 +1,21 @@
-/**
-*  Template Name: Kelvin
-*  Template URL: https://templatemag.com/kelvin-bootstrap-resume-template/
-*  Author: TemplateMag.com
-*  License: https://templatemag.com/license/
-*/
+/*---------------------------------------------------
+* Template Name:  Kelvin
+* Template URL:   https://templatemag.com/kelvin-bootstrap-resume-template/
+* Author:         TemplateMag.com
+* License:        https://templatemag.com/license/
+*
+/*---------------------------------------------------
+* Edited by:      Matthew Rothfuss
+* Date:           08/25/2018
+*
+/*---------------------------------------------------*/
 
 body {
-  background-color: #f2f2f2;
+  background-color: #fff;
   font-family: "Lato";
-  font-weight: 300;
+  font-weight: normal;
   font-size: 16px;
-  color: #555;
+  color: #838C95;
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
 }
@@ -37,7 +42,7 @@ p {
 /* Links */
 
 a {
-  color: #1abc9c;
+  color: #f85c37;
   word-wrap: break-word;
   -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
   -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -88,7 +93,7 @@ hr {
 }
 
 #topbar-inner {
-  background: #111;
+  background: #2f2f2f;
   line-height: 0;
   text-align: center;
 }
@@ -137,12 +142,12 @@ By default, top navigation bar uses "fixed" position
 }
 
 #section-topbar ul#nav .active a {
-  background: #44bbaa;
+  background: #f85c37;
   border-left: 1px solid #111;
 }
 
 #section-topbar ul#nav .active a:hover {
-  background: #44bbaa;
+  background: #f85c37;
 }
 
 #section-topbar i {
@@ -187,14 +192,21 @@ SECTION WRAPS
 /* Intnro Wrap */
 
 #intro {
-  background: #2c3e50;
+  background: #2B2B2B;
   padding-top: 60px;
   padding-bottom: 60px;
   color: white;
 }
 
-#intro h5, p {
+#intro h5 {
+  font: 22px/30px 'Raleway';
   color: white;
+  margin-bottom: 12px;
+}
+
+#intro p {
+  font-family: 'opensans-regular', sans-serif;
+  color: #7A7A7A;
 }
 
 #intro i {
@@ -202,6 +214,36 @@ SECTION WRAPS
   font-size: 20px;
   padding-right: 8px;
   vertical-align: middle;
+}
+
+#intro .download .button,
+#intro .download .button:visited {
+  font: 16px/30px 'opensans-bold', sans-serif;
+  display: inline-block;
+  background: #444;
+  text-decoration: none;
+  letter-spacing: 0;
+  padding: 12px 20px;
+  margin-bottom: 18px;
+  border: none;
+  cursor: pointer;
+  height: auto;
+  border-radius: 3px;
+}
+
+#intro .download .button:hover {
+  background: #3d4145;
+  color: #fff;
+}
+
+#intro .download .button:active {
+  background: #3d4145;
+  color: #fff;
+}
+
+#intro a,
+#intro a:visited {
+  color: #fff;
 }
 
 #skillswrap {
@@ -216,32 +258,36 @@ SECTION WRAPS
 }
 
 #footwrap {
-  background: #2f2f2f;
+  background: #191919;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
 #footwrap p {
-  color: white;
+  /* color: white; */
+  font-weight: 200;
 }
 
 #footwrap h5 {
+  font: 18px/24px 'Raleway';
   color: white;
 }
 
 #footwrap t {
-  font-weight: 700;
+  color: white;
+  font-weight: 600;
 }
 
 #footwrap i {
   padding-right: 8px;
-  color: #1abc9c;
+  /* color: #1abc9c; */
+  color: #f85c37;
 }
 
 /* Copyright Wrap */
 
 #copyrights {
-  background: #222222;
+  background: #303030;
   padding: 20px 0;
   text-align: center;
   color: #fff;
@@ -267,8 +313,13 @@ SECTION WRAPS
   margin-bottom: 10px;
 }
 
-.desc ul {
-  margin-bottom: 30px;
+.desc h5 {
+  font: 18px/24px 'Raleway';
+  margin-bottom: 12px;
+}
+
+.desc .item {
+  margin-top: 30px;
 }
 
 .desc t {
@@ -283,79 +334,10 @@ SECTION WRAPS
 }
 
 .desc more {
-  /* color: #95a5a6; */
-  color: #838C95;
+  color: #777;
   font-weight: normal;/
 }
 
 sm {
   font-size: 12px;
-}
-
-/* Contact Form */
-
-.contact-form label {
-  color: #999;
-}
-
-.contact-form input, .contact-form textarea {
-  padding: 10px 12px;
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 14px;
-  height: auto;
-}
-
-.contact-form .form-send {
-  text-align: center;
-}
-
-.contact-form .form-send button {
-  background: #44bbaa;
-  border: 0;
-  padding: 10px 30px;
-  color: #fff;
-  transition: 0.4s;
-  cursor: pointer;
-}
-
-.contact-form .form-send button:hover {
-  background: #23c8b1;
-}
-
-.contact-form .validate {
-  display: none;
-  color: red;
-  margin: 0 0 15px 0;
-  font-weight: 400;
-  font-size: 13px;
-}
-
-.contact-form .loading {
-  display: none;
-  color: #555;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-  margin: 15px 0;
-}
-
-.contact-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin: 15px 0;
-}
-
-.contact-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin: 15px 0;
 }
