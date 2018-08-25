@@ -2,39 +2,35 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <title>Matthew Rothfuss - Online Resume</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
 
   <!-- favicon setup -->
-  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="assets/ico/apple-touch-icon-57x57.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114x114.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72x72.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144x144.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="assets/ico/apple-touch-icon-120x120.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="assets/ico/apple-touch-icon-152x152.png" />
-  <link rel="icon" type="image/png" href="assets/ico/favicon-32x32.png" sizes="32x32" />
-  <link rel="icon" type="image/png" href="assets/ico/favicon-16x16.png" sizes="16x16" />
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/ico/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/ico/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/ico/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/ico/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="img/ico/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/ico/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="img/ico/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="img/ico/favicon-16x16.png" sizes="16x16" />
   <meta name="application-name" content="Matthew Rothfuss - Online Resume"/>
   <meta name="msapplication-TileColor" content="#FFFFFF" />
-  <meta name="msapplication-TileImage" content="assets/ico/mstile-144x144.png" />
+  <meta name="msapplication-TileImage" content="img/ico/mstile-144x144.png" />
 
-  <title>Matthew Rothfuss - Online Resume</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic|Raleway:400,300,700" rel="stylesheet">
 
-  <!-- Bootstrap core CSS -->
-  <link href="assets/css/bootstrap.css" rel="stylesheet">
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Custom styles for this template -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-
-  <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
-
-  <script src="assets/js/jquery.min.js"></script>
-  <script type="text/javascript" src="assets/js/smoothscroll.js"></script>
-  <script src="assets/js/Chart.js"></script>
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
 
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -47,12 +43,6 @@
   ga('send', 'pageview');
   </script>
 
-  <script>
-  // Using jQuery Event API v1.3
-  $('#ResumeDL').on('click', function() {
-    ga('send', 'event', 'ResumeDL', 'click', 'nav-buttons');
-  });
-  </script>
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
@@ -60,7 +50,7 @@
   <![endif]-->
 </head>
 
-<body data-spy="scroll" data-offset="0" data-target="#nav">
+<body data-spy="scroll" data-offset="64" data-target="#section-topbar">
 
   <div id="section-topbar">
     <div id="topbar-inner">
@@ -68,78 +58,98 @@
         <div class="row">
           <div class="dropdown">
             <ul id="nav" class="nav">
-              <li class="menu-item"><a class="smoothScroll" href="#about" title="About"><i class="fa fa-user"></i></a></li>
-              <li class="menu-item"><a class="smoothScroll" href="#resume" title="Resume"><i class="fa fa-file"></i></a></li>
-              <li class="menu-item"><a class="smoothScroll" href="#work" title="Works"><i class="fa fa-briefcase"></i></a></li>
-              <li class="menu-item"><a class="smoothScroll" href="#contact" title="Contact"><i class="fa fa-envelope"></i></a></li>
-            </ul><!--/ uL#nav -->
-          </div><!-- /.dropdown -->
+              <li class="menu-item"><a class="smothscroll" href="#about" title="About"><i class="fa fa-user"></i></a></li>
+              <li class="menu-item"><a class="smothscroll" href="#resume" title="Resume"><i class="fa fa-file-text"></i></a></li>
+              <li class="menu-item"><a class="smothscroll" href="#work" title="Work"><i class="fa fa-briefcase"></i></a></li>
+              <li class="menu-item"><a class="smothscroll" href="#contact" title="Contact"><i class="fa fa-envelope"></i></a></li>
+            </ul>
+            <!--/ uL#nav -->
+          </div>
+          <!-- /.dropdown -->
 
           <div class="clear"></div>
-        </div><!--/.row -->
-      </div><!--/.container -->
+        </div>
+        <!--/.row -->
+      </div>
+      <!--/.container -->
 
       <div class="clear"></div>
-    </div><!--/ #topbar-inner -->
-  </div><!--/ #section-topbar -->
+    </div>
+    <!--/ #topbar-inner -->
+  </div>
+  <!--/ #section-topbar -->
 
   <div id="headerwrap">
     <div class="container">
       <div class="row centered">
         <div class="col-lg-12">
-          <h1>Matthew J. Rothfuss</h1>
-          <h3>Physics | matthew@matthewrothfuss.me</h3>
-        </div><!--/.col-lg-12 -->
-      </div><!--/.row -->
-    </div><!--/.container -->
-  </div><!--/.#headerwrap -->
+          <h1>Matthew Rothfuss</h1>
+          <h3>matthew@matthewrothfuss.me</h3>
+        </div>
+        <!--/.col-lg-12 -->
+      </div>
+      <!--/.row -->
+    </div>
+    <!--/.container -->
+  </div>
+  <!--/.#headerwrap -->
 
 
-  <section id="about" name="about"></section>
-  <div id="intro">
-    <div class="container">
+  <section id="about" name="about">
+    <div id="intro">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-2 col-lg-offset-1">
+            <h5>ABOUT</h5>
+          </div>
+          <div class="col-lg-6">
+            <p>I'm a hard working, quick to learn, recent Kansas State University graduate looking for a Physics related job.</p>
+          </div>
+          <div class="col-lg-3">
+            <p><a href="pdf/Resume_MatthewRothfuss_pub_ngpa_v17_02.pdf" id="ResumeDL"><i class="fa fa-file"></i> <sm>DOWNLOAD PDF</a></sm></p>
+          </div>
+
+        </div>
+        <!--/.row -->
+      </div>
+      <!--/.container -->
+    </div>
+    <!--/ #intro -->
+  </section>
+
+
+  <section id="resume" name="resume">
+    <!--EDUCATION DESCRIPTION -->
+    <div class="container desc">
       <div class="row">
 
         <div class="col-lg-2 col-lg-offset-1">
-          <h5>ABOUT</h5>
+          <h5>EDUCATION</h5>
         </div>
         <div class="col-lg-6">
-          <p>I'm a hard working, quick to learn, recent Kansas State University graduate looking for a Physics related job.</p>
+          <p>
+            <t>B.S. in Physics</t><br/>
+            Kansas State University | Manhattan, KS<br/>
+          </p>
         </div>
         <div class="col-lg-3">
-          <p><a href="assets/Resume_MatthewRothfuss_pub_ngpa_v17_02.pdf" id="ResumeDL"><i class="fa fa-file"></i> <sm>DOWNLOAD PDF</a></sm></p>
+          <p>
+            <sm>GRADUATED MAY 2016</sm><br/>
+          </p>
         </div>
 
-      </div><!--/.row -->
-    </div><!--/.container -->
-  </div><!--/ #intro -->
-
-
-  <section id="resume" name="resume"></section>
-  <!--EDUCATION DESCRIPTION -->
-  <div class="container desc">
-    <div class="row">
-
-      <div class="col-lg-2 col-lg-offset-1">
-        <h5>EDUCATION</h5>
       </div>
-      <div class="col-lg-6">
-        <p><t>B.S. in Physics</t><br/>
-          Kansas State University | Manhattan, KS<br/>
-        </p>
-      </div>
-      <div class="col-lg-3">
-        <p><sm>GRADUATED MAY 2016</sm><br/></p>
-      </div>
-
-    </div><!--/.row -->
-    <br>
-    <hr>
-  </div><!--/.container -->
+      <!--/.row -->
+      <br>
+      <hr>
+    </div>
+    <!--/.container -->
+  </section>
 
 
+  <section id="work" name="work">
   <!--WORK DESCRIPTION -->
-  <section id="work" name="work"></section>
   <div class="container desc">
     <div class="row">
 
@@ -229,63 +239,81 @@
         </more>
       </div>
       <div class="col-lg-3">
-        <p><sm>MAY - AUGUST (2010 & 2011)<br/>
+        <p><sm>MAY - AUGUST (2010 &amp; 2011)<br/>
           AUGUST 2008 - AUGUST 2009</sm>
         </p>
       </div>
 
-    </div><!--/.row -->
-  </div><!--/.container -->
-
-</div><!--/.row -->
-<br>
-<br>
-</div><!--/.container -->
-
-
-
-<section id="contact" name="contact"></section>
-<!--FOOTER DESCRIPTION -->
-<div id="footwrap">
-  <div class="container">
-    <div class="row">
-
-      <div class="col-lg-2 col-lg-offset-1">
-        <h5>CONTACT</h5>
-      </div>
-      <div class="col-lg-6">
-        <p><t>Email</t><br/>
-          matthew@matthewrothfuss.me <br/>
-        </p>
-        <p><t>Phone</t><br/>
-          (785) 260-0206 <br/>
-        </p>
-      </div>
-      <div class="col-lg-3">
-        <p><sm>SOCIAL LINKS</sm></p>
-        <p>
-          <!-- <a href="https://twitter.com/Rothfuss212"><i class="fa fa-twitter"></i></a> -->
-          <!-- <a href="https://www.facebook.com/rothfuss.matthew"><i class="fa fa-facebook"></i></a> -->
-          <a href="https://www.linkedin.com/in/mrothfuss"><i class="fa fa-linkedin"></i></a>
-          <a href="https://github.com/Kovrinic"><i class="fa fa-github"></i></a>
-
-        </p>
-      </div>
-    </div><!--/.row -->
-  </div><!--/.container -->
-</div><!--/ #footer -->
-
-<div id="c">
-  <div class="container">
-    <p>Created by <a href="https://www.blacktie.co">BLACKTIE.CO</a></p>
-
+    </div>
+    <!--/.row -->
+    <br>
+    <br>
   </div>
-</div>
+  <!--/.container -->
 
 
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="assets/js/bootstrap.js"></script>
+  <section id="contact" name="contact">
+    <!--FOOTER DESCRIPTION -->
+    <div id="footwrap">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-2 col-lg-offset-1">
+            <h5>CONTACT</h5>
+          </div>
+          <div class="col-lg-6">
+            <p>
+              <t>Email</t><br/>
+              matthew@matthewrothfuss.me <br/>
+            </p>
+            <p>
+              <t>Phone</t><br/>
+              (785) 260-0206 <br/>
+            </p>
+          </div>
+          <div class="col-lg-3">
+            <p>
+              <t>Social Links</t><br/>
+              <a href="https://www.linkedin.com/in/mrothfuss"><i class="fa fa-linkedin"></i></a>
+              <a href="https://gitlab.com/Kovrinic"><i class="fa fa-gitlab"></i></a>
+              <a href="https://github.com/Kovrinic"><i class="fa fa-github"></i></a>
+            </p>
+          </div>
+        </div>
+        <!--/.row -->
+      </div>
+      <!--/.container -->
+    </div>
+    <!--/ #footer -->
+  </section>
+
+  <div id="copyrights">
+    <div class="container">
+      <p>
+        &copy; Copyrights <strong>Kelvin</strong>. All Rights Reserved
+      </p>
+      <div class="credits">
+        <!--
+          You are NOT allowed to delete the credit link to TemplateMag with free version.
+          You can delete the credit link only if you bought the pro version.
+          Buy the pro version with working PHP/AJAX contact form: https://templatemag.com/kelvin-bootstrap-resume-template/
+          Licensing information: https://templatemag.com/license/
+        -->
+        Website <a href="https://github.com/Kovrinic/kovrinic.github.io">Source</a> &bull;
+        Created with Kelvin template by <a href="https://templatemag.com/">TemplateMag</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/php-mail-form/validate.js"></script>
+  <script src="lib/chart/chart.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
 </body>
 </html>
